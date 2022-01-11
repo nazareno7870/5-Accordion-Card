@@ -24,7 +24,6 @@ body{
 }
 img{
     max-width: 100%;
-    filter:drop-shadow(0px 8px 10px rgb(109, 109, 109));
 }
 
 .card{
@@ -32,6 +31,9 @@ img{
     width: 340px;
     margin-top: 140px;
     background-color: #fff;
+    background-image: url("./images/bg-pattern-mobile.svg");
+    background-position: top;
+    background-repeat: no-repeat;
     position: relative;
     padding: 30px;
     border-radius: 24px;
@@ -109,3 +111,55 @@ h4:hover{
     color: var(--soft-red);
 }
 
+.img-card-desktop{
+    display: none;
+}
+
+@media (min-width: 765px) {
+    body{
+        min-height: calc(100vh - 60px);
+    }
+    .img-top-card-mobile{
+        display: none;
+    }
+    .img-card-desktop{
+        content: " ";
+        background-image: url("./images/illustration-woman-online-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 360px;
+        background-position: right;
+        display: block;
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        top: 60px;
+        left: -2px;
+    }
+
+
+    .card{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+        background-image: url("./images/bg-pattern-desktop.svg");
+        background-position: -280px -90px;
+        background-size: 600px;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 850px;
+    }
+
+    .flex{
+        width: 400px;
+    }
+    h1{
+        margin-top: 20px;
+        text-align: left;
+    }
+    .box{
+        width: 170px;
+        position: absolute;
+        left: -80px;
+        top: 104px
+    }
+}
