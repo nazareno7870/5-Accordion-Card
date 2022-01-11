@@ -10,7 +10,7 @@
 
 }
 .attribution { margin-top: 15px;font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(240, 5%, 91%);; }
 *{
     box-sizing: border-box;
     margin: 0;
@@ -38,7 +38,7 @@ img{
 }
 
 
-.img-top-card{
+.img-top-card-mobile{
     position: absolute;
     width: 260px;
     left: 0;
@@ -81,9 +81,10 @@ h1{
 h4{
     color: var(--grayish-blue);
     cursor: pointer;
-
 }
-
+h4:hover{
+    color: var(--soft-red);
+}
 .content{
     margin-top: 10px;
     height: 0px;
@@ -97,7 +98,14 @@ h4{
     height: 60px;
 }
 
-.contain-item.rotate img{
+.contain-item.active img{
     transition: 0.5s;
-    transform: rotateX(180deg);
+    transform: rotateZ(180deg);
 }
+.contain-item.active h4{
+    color: var(--dark-blue);
+}
+.contain-item.active h4:hover{
+    color: var(--soft-red);
+}
+

@@ -14,6 +14,6 @@ const handleClick = event =>{
     const content = event.path[2].childNodes[3];
     content.classList.toggle('visible')
     const arrow = event.path[1];
-    arrow.classList.toggle('rotate')
+    arrow.classList.toggle('active')
 }
 
